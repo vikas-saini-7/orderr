@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-container{
+    padding: 0 8%;
+}
+
+.panel{
+    content: '';
+    width: 100%;
+    height: 25px;
+    margin-bottom: 50px;
+}
+
+button{
+    background-color: #c73c00;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-family: poppins;
+    transition: 0.4s;
+}
+
+button:hover{
+    transform: scale(0.97);
+    opacity: 0.7;
+}
+
+
+@media (max-width: 900px){
+    .all-restaurants{
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
+@media (max-width: 500px){
+    .all-restaurants{
+        grid-template-columns: 1fr !important;
+    }
+}
